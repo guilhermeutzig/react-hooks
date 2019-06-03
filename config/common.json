@@ -1,10 +1,10 @@
 {
-  "title": "R/GA Frontend Academy",
+  "title": "React Hooks",
   "description": "",
-  "namespace": "rga",
+  "namespace": "rh",
   "keywords": "",
   "og": {
-    "title": "R/GA Frontend Academy",
+    "title": "React Hooks",
     "url": "",
     "image": "",
     "description": "",
