@@ -1,0 +1,11 @@
+@function mq($mq-value) {
+  @return map-get($mq, $mq-value);
+}
+
+@function z-index($value) {
+  @return map-get($z-index, $value);
+}
+
+@function color($value) {
+  @return map-get($colors, $value);
+}

@@ -1,0 +1,50 @@
+// Media Queries
+// ----------------------------------------------------------
+
+$mq: (
+  'mobile': 320px,
+  'tablet': 768px,
+  'laptop': 1024px,
+  'desktop': 1280px,
+  'infinity': 1440px
+);
+
+// Guide Colors
+// ----------------------------------------------------------
+
+$colors: (
+  'transparent': transparent,
+  'white': #fff,
+  'black': #000,
+  'main-red': #e51837,
+  'light-border': #d8d8d8
+);
+
+// Spaces
+// ----------------------------------------------------------
+
+$spaces: (
+  '0': 0,
+  '2': 0.2rem,
+  '4': 0.4rem,
+  '8': 0.8rem,
+  '16': 1.6rem,
+  '24': 2.4rem,
+  '28': 2.8rem,
+  '32': 3.2rem,
+  '40': 4rem,
+  '48': 4.8rem,
+  '64': 6.4rem,
+  '80': 8rem,
+  '128': 12.8rem,
+  '168': 16.8rem,
+  '208': 20.8rem
+);
+
+// Default variables
+// ----------------------------------------------------------
+
+$base-font-size: 62.5%;
+$font: 'Roboto', Arial, sans-serif;
+$ns: getnamespace();
+$main-transition: cubic-bezier(0.645, 0.045, 0.355, 1);

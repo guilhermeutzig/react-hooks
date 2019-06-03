@@ -1,0 +1,28 @@
+version: '3'
+services:
+  dev:
+    build: .
+    command: bash -c "/bin/bash docker-compose.sh"
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/app
+    image: mangar/webapp-front:8.4
+    environment:
+      - NODE_ENV=development
+
+  vectors:
+    command: npm run docker-vectors
+    volumes:
+      - .:/app
+    image: mangar/webapp-front:8.4
+
+  build:
+    command: bash -c "/bin/bash docker-compose.sh"
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    image: mangar/webapp-front:8.4
+    environment:
+      - NODE_ENV=production

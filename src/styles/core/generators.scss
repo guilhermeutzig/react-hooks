@@ -1,0 +1,137 @@
+// Generator for color classes
+// ----------------------------------------------------------
+
+@mixin generate-color-clss {
+  @each $name, $color in $colors {
+    .#{$ns}-color-#{$name} {
+      color: $color;
+
+      @include min-screen(mq('laptop')) {
+        &--hover {
+          transition: color 0.3s linear;
+          cursor: pointer;
+
+          &:hover {
+            color: $color;
+          }
+        }
+      }
+    }
+
+    .#{$ns}-bg-color-#{$name} {
+      background-color: $color;
+
+      @include min-screen(mq('laptop')) {
+        &--hover {
+          cursor: pointer;
+
+          &:not(:disabled):hover {
+            background-color: $color;
+          }
+        }
+      }
+    }
+
+    .#{$ns}-border-color-#{$name} {
+      border-color: $color;
+
+      @include min-screen(mq('laptop')) {
+        &--hover {
+          cursor: pointer;
+
+          &:not(:disabled):hover {
+            border-color: $color;
+          }
+        }
+      }
+    }
+
+    .#{$ns}-border-top-color-#{$name} {
+      border-top-color: $color;
+    }
+
+    .#{$ns}-border-right-color-#{$name} {
+      border-right-color: $color;
+    }
+
+    .#{$ns}-border-bottom-color-#{$name} {
+      border-bottom-color: $color;
+    }
+
+    .#{$ns}-border-left-color-#{$name} {
+      border-left-color: $color;
+    }
+
+    .#{$ns}-svg-fill-#{$name} {
+      polygon {
+        fill: $color;
+      }
+
+      path {
+        fill: $color;
+      }
+
+      ellipse {
+        fill: $color;
+      }
+
+      circle {
+        fill: $color;
+      }
+    }
+
+    .#{$ns}-svg-fill-#{$name}--hover {
+      polygon {
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+          fill: $color;
+        }
+      }
+
+      path {
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+          fill: $color;
+        }
+      }
+
+      ellipse {
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+          fill: $color;
+        }
+      }
+
+      circle {
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &:hover {
+          fill: $color;
+        }
+      }
+    }
+
+    .#{$ns}-svg-stroke-#{$name} {
+      path {
+        stroke: $color;
+      }
+
+      ellipse {
+        stroke: $color;
+      }
+
+      circle {
+        stroke: $color;
+      }
+    }
+  }
+}
+
+@include generate-color-clss;

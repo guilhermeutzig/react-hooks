@@ -1,0 +1,24 @@
+&-container {
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
+
+  @include min-screen(mq('tablet')) {
+    padding: 0;
+    max-width: 75rem;
+  }
+
+  @include min-screen(mq('laptop')) {
+    max-width: 99.2rem;
+  }
+
+  @include min-screen(mq('desktop')) {
+    max-width: 120rem;
+  }
+}
+
+&-right-container {
+  padding: 0 6rem;
+  margin: 0 0 0 auto;
+  width: calc(100% - 32rem);
+}

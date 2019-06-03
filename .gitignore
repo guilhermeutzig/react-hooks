@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+.sass-cache
+jsconfig.json
+.DS_Store
+package-lock.json
+dist
+public
+yarn.lock
+.out
+v8-compile-cache-0/
+.firebase
+*.log
